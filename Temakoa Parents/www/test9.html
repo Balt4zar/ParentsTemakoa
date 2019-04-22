@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.min.css">
+    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.colors.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+</head>
+<body>
+
+    <div class="page">
+        <div class="page-content infintie-scroll">
+
+                    <div class="navito">
+                        <div class="leftIcon">
+                            <a onclick="location.href='index.html'" class="fas fa-home"></a>
+                        </div>
+                        De 9 a 10 años
+                    </div>
+
+                    <div class="card">
+                        <h2>
+                            Conteste los siguientes reactivos de acuerdo a las capacidades obtenidas por el niño. Si la respuesta es un sí, presione el botón que está al lado, si no, pase al siguiente reactivo
+                        </h2>
+                    </div>
+
+                    <di id="Bien" name="Bien" class="Resultado1">
+                            <h3 class="R1">
+                                Bien
+                            </h3>
+                            <p>
+                                Los resultados parecen ser los normales en un niño sano, sin embargo si no está convencido aún, puede pasar al próximo test haciendo click en el siguiente botón
+                            </p>
+
+                            <button class="Siguiente" onclick="location.href='Psicosocial_motriz_primaria.html'">Siguiente test</button>
+
+                    </div>
+
+                    <div id="Regular" name="Regular" class="Resultado2">
+                        <h3 class="R2">
+                            Regular
+                        </h3>
+                        <p>
+                            Si bien los resultados no resultan alarmantes, le recomendamos realizar el siguiente test.
+                        </p>
+
+                        <button class="Siguiente" onclick="location.href='Psicosocial_motriz_primaria.html'">Siguiente test</button>
+
+                    </div>
+
+                    <div id="Mal" name="Mal" class="Resultado3">
+                        <h3 class="R3">
+                            Alarma
+                        </h3>
+                        <p>
+                            Los resultados reflejan mayor severidad. Por favor, realize el siguiente test.
+                        </p>
+
+                        <button class="Siguiente" onclick="location.href='Psicosocial_motriz_primaria.html'">Siguiente test</button>
+
+                    </div>
+
+                    <div class="card">
+
+                        <article>
+                            <form action="" method="get">
+                                <label class="reactivo">1._ Tiene cuidado en la mesa</label>
+                                <input id="9-1" type="checkbox" />
+                                <br />
+                                <label class="reactivo">2._ Hace compras menores</label>
+                                <input id="9-2" type="checkbox" />
+                                <br />
+                                <label class="reactivo">3._ Va al centro independientemente</label>
+                                <input id="9-3" type="checkbox" />
+                                <br />
+
+                                <input type="button" name="btn_eval" id="btn_eval" value="Evaluar" onclick="evaluar()" />
+
+                            </form>
+
+                        </article>
+
+                        <button onclick="location.href='about.html'">Volver al menú</button>
+
+                    </div>
+                </div>
+
+            <script type="text/javascript" src="cordova.js"></script>
+            <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+            <script type="text/javascript" src="js/my-app.js"></script>
+            <script type="text/javascript" src="js/Tests/test9.js"></script>
+
+
+
+</body>
+</html>
+
+
+
+
+
+

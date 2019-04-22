@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html lang="es"  xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.min.css">
+    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.colors.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+
+    <!--   <?php
+
+       session_start();
+       if(!isset($_SESSION["usuario"])){
+
+       header("location:login(2).php")
+
+       }
+
+       ?> -->
+
+    <div class="page">
+        <div class="page-content infinite-scroll">
+
+            <div class="navito">
+                <div class="leftIcon">
+                    <a onclick="location.href='index.html'" class="fas fa-home"></a>
+                </div>
+                Temakoa
+            </div>
+
+            <div id="edit" style="float:right; position:sticky;">
+                <i class="fas fa-phone-square fa-3x" onclick="location.href='Llamada.html'" style="color:darkred;" ></i>
+            </div>
+            <div class="clear"></div>
+
+            <div class="card">
+
+                <div id="Datos">
+
+                    <div class="leftIcon">
+                        <label class="fas fa-user-tie fa-5x" style="padding-right:10px; padding-left:5px;"></label>
+                    </div>
+
+                    <div>
+                        <input type="text" class="dato" id="NombreYApellido" value="" placeholder="Nombre y apellido" disabled />
+                        </br>
+                        </br>
+                        <input type="text" class="dato" id="CodigoPostal" value="" placeholder="CódigoPostal" disabled />
+                        </br>
+                        </br>
+
+                    </div>
+                    <div>
+                        <button id="Editarbtn" onclick="Editar()" <label class="fas fa-pen-square fa-3x" style=" color:#29d16f;"></label></button>
+                        <button id="Guardarbtn" class="Guardarbtn" style="background-color:#29d16f; color:white; padding-left:5px; padding-right:5px;" onclick="Guardar()">Guardar</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div style="padding-top:0px;" class="card">
+                <div>
+                    <button style="float:left; margin-left:0px; margin-right: 0px; margin-top:0px; background-color:#2ac194; color:white; border-right-color:white; border-top-right-radius:7px; border-bottom-right-radius:7px; padding-top:7px; padding-left:3px; padding-right:3px; padding-bottom:7px; border-width:1px;" onclick="location.href='about.html'"> Realiza el test de diagnóstico</button>
+                    <button style="float:left; margin-left:0px; margin-right: 0px; margin-top:0px; background-color:#2ac194; color:white; border-left-color:white; border-top-left-radius:7px; border-bottom-left-radius:7px; padding-top:7px; padding-left:3px; padding-right:3px; padding-bottom:7px;border-width:1px; " onclick="location.href='busqueda.html'">Buscar Terapeutas</button>
+                </div>
+
+                <div class="contenedor" style="padding-left:10px;">
+                  </br>
+                    </br>
+                    </br>
+                    <h4 style="margin-left:10px;"> Agenda del mes</h4>
+                    
+                    <input type="date" class="tcal" name="date_val" id="date_val" onclick="this.value=''" />
+
+                    <input type="button" name="cr" id="cr" value="Insertar" onclick="agregaFecha()" />
+                </div>
+
+                <div class="contenedor">
+
+                    <p id="div_salida">
+
+                    </p>
+
+                </div>
+                
+            </div>
+           
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="phonegap.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,421 @@
+/*
+   statusbar-overlay sets the background color for the overlay. Black text is the default when the statusbar plugin is not added. When the
+   statusbar plugin is added, it also adds default setting to make the content white via:
+
+       <preference name="StatusBarStyle" value="lightcontent"/>
+
+   Setting the background color to black will allow the default light content (white text/icons) to show on it. The statusbar plugin is included
+   in the config.xml file and will be added by the CLI when you build locally.
+
+   See https://github.com/apache/cordova-plugin-statusbar
+*/
+.clear{
+    clear:both;
+}
+
+.footer {
+    position:sticky;
+    background-color: #29d16f;
+    color: white;
+    width: 100%;
+    border-top-left-radius:15px;
+    border-top-right-radius:15px;
+}
+
+input[type="text"][disabled]{
+    color: black;
+    background-color: white;
+    border-color: none;
+    border-style:none;
+}
+
+.fa-times-circle{
+    color:red;
+    float:right;
+}
+
+.BotonEliminar{
+    float:right;
+}
+.Guardarbtn{
+    display:none;
+}
+.AvPic{
+    float:left;
+    width:40px;
+    height:40px;
+    border-width:1px;
+    border-radius:20px;
+    border-color:black;
+    position:fixed;
+    
+}
+.dato{
+    font-size:14px;
+}
+.bodyCard {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    font-size: 15px;
+    border-color: #ededed;
+    border-width: 8px;
+    padding-left: 10px;
+    padding-right: 30px;
+    height: inherit;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+.stickCard {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    font-size: 15px;
+    border-color: #ededed;
+    border-width: 8px;
+    padding-left: 10px;
+    padding-right: 30px;
+    height: initial;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    vertical-align:bottom;
+    position:sticky;
+}
+
+.Siguiente{
+    border-color:grey;
+    font-size:14px;
+    border-radius: 5px;
+    border-width:1px;
+}
+
+select{
+    border-width:1px;
+    border-color: black;
+    border-style: solid;
+    font-size: 20px;
+    background-color: white;
+    float: right;
+}
+
+.Resultado1 {
+    color: #003319;
+    padding-left: 30;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    font-size: 15px;
+    border-color: #ededed;
+    border-width: 8px;
+    padding-left: 10px;
+    padding-right: 30px;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    float: center;
+    display: none;
+}
+
+.R1 {
+    color: #22c152
+}
+
+.Resultado2 {
+    color: #6b6700;
+    padding-left:30;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    font-size: 15px;
+    border-color: #ededed;
+    border-width: 8px;
+    padding-left: 10px;
+    padding-right: 30px;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    float: center;
+    display:none;
+}
+
+.R2 {
+    color: #cea939
+}
+
+.Resultado3 {
+    color: #4f0000;
+    padding-left:30;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    font-size: 15px;
+    border-color: #ededed;
+    border-width: 8px;
+    padding-left: 10px;
+    padding-right: 30px;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    float: center;
+    display:none;
+}
+
+.R3 {
+    color: #c10000
+}
+
+input[type='checkbox']{
+    width:22px;
+    height:22px;
+    float: right;
+    margin-right:5px;
+
+}
+
+button{
+    border:solid;
+    border-width:1px;
+    font-size:15px;
+    background-color:white;
+    border-radius:5px;
+    margin:5px 3px 3px 5px;
+    padding:3px 3px 3px 3px;
+}
+
+
+.Ficha-perfil {
+    font-size: 20px;
+    background-color: #efffef;
+    border: 5px #64877f;
+    font-color: black;
+}
+
+.button-nav{
+   font-size:18px;
+   margin-top:5px;
+   margin-bottom:5px;
+   margin-left:0px;
+   margin-right:0px;
+   border-width:2px;
+   background-color:white;
+   border-color:teal;
+   border-radius:10px;
+   padding-top:5px;
+   padding-bottom:5px;
+   border-style:solid;
+}
+
+.Citas{
+    height:50px;
+    width:inherit;
+}
+
+}
+
+.perfil-foto{
+    width: 100px;
+    height: 100px;
+    border-color: dimgrey;
+    border: 20px;
+    
+
+}
+
+label{
+    padding-left:30px;
+    white-space: pre-line;
+}
+
+
+.base {
+    background-color: #48ce7f;
+    align-content:center;
+    height:full;
+
+}
+
+.statusbar-overlay {
+    background: #000000;
+}
+
+
+.card {
+    padding-left:30px;
+    margin-left:10px;
+    margin-right:10px;
+    margin-top:20px;
+    margin-bottom:20px;
+    background-color: white;
+    font-size: 15px;
+    border-color: #ededed;
+    border-width: 8px;
+    padding-left: 10px;
+    padding-right: 30px;
+    height:auto;
+    padding-top:10px;
+    padding-bottom:30px;
+    float:center;
+  
+
+    
+}
+
+input[type='button']{
+    padding:5px 5px 5px 5px;
+    background-color:white;
+    border-radius:5px 5px 5px 5px;
+    font-size:12px;
+    border-width:1px;
+    border-color: black;
+}
+
+.navito {
+
+    text-align: center;
+    font-size: 28px;
+    background-color: #29d16f;
+    color: white;
+    height: auto;
+    border: 5px;
+    border-color: dimgrey;
+    position: sticky;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.reactivo {
+    font-size: 20px;
+    background-color: white;
+    height:22px;
+    padding-left:10px;
+    padding-top:5px;
+    padding-bottom:5px;
+    border-color: lightgrey;
+    border-width:20px;
+}
+
+.Contenedor {
+    background-color: none;
+    width:auto;
+    margin-left:5px;
+    vertical-align: central;
+    padding-left:30px;
+    border:5px;
+    border-color:grey;
+    position:fixed;
+}
+
+li {
+    position: relative;
+    padding: 10px 10px 10px 10px;
+    font-size: 11px;
+    background-color: #f7f7f7;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-color: #dbdbdb;
+    transition: 0.2s;
+    user-select: none;
+}
+
+.addBtn {
+    padding: 10 px;
+    width:25%;
+    float: left;
+    text-align: center;
+    font-size: 13px;
+    font-family: sans-serif;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: whitesmoke;
+    border: 10px;
+    border-color: palegreen;
+    border-width:1px;
+}
+
+footer {
+    text-align: center;
+    font-size: 28px;
+    background-color: white;
+    height: auto;
+    border: 5px;
+    border-color: dimgrey;
+    position: sticky;
+}
+
+
+.avatar {
+    vertical-align: middle;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 10px;
+    border-color: dimgrey;
+}
+
+label{
+    font-size:18px;
+    text-align:center;
+    color: black;
+    padding-left:20px;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+.Opcion-Lista {
+    font-size: 18px;
+    color: black;
+    background-color: white;
+
+    border-radius: 5px;
+    border-width:1px;
+    border-bottom-width:3px;
+    border-bottom-color:lightgray;
+
+    padding-top:5px;
+    padding-bottom:5px;
+
+    margin-left:10px;
+    margin-top:3px;
+    margin-bottom:3px;
+    width:300px;
+}
+
+.leftIcon{
+    margin-top:5px;
+    margin-bottom:10px;
+    margin-left:20px;
+    align-items:left;
+    float:left;
+    padding-bottom:10px;
+    height:auto;
+
+}
+
+.cerrarsesión {
+    float: right;
+    border: solid;
+    border-width: 2px;
+    font-size: 15px;
+    background-color: white;
+    border-radius: 5px;
+    margin: 5px 3px 3px 5px;
+    padding: 3px 3px 3px 3px;
+}
+.psicosocial-motriz{
+    float:left;
+    position:auto;
+}

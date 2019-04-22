@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<widget xmlns ="http://www.w3.org/ns/widgrts"
+        xmlns:gap ="http://phonegap.com/ns/1.0"
+  id="com.phonegap.TemakoaParents"
+  versionCode ="10"
+  version ="1.0.0"
+
+<name>Temakoa Parents</name>
+<description>
+  App que ofrece el servicio búsqueda y contacto con profesionales dirigida a padres de familia que requieren ayuda profesional para atender los problemas de aprendizaje de sus hijos
+</description>
+  
+  <author email="Temakoa.org@gmail.com"></author>
+  </widget>

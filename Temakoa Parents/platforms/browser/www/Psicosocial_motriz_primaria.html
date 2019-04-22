@@ -1,0 +1,543 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.min.css">
+    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.colors.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <div class="page">
+
+        <div class="page-content infinite-scroll">
+
+            <div class="navito">
+                <div class="leftIcon">
+                    <a onclick="location.href='index.html'" class="fas fa-home"></a>
+                </div>
+                Registros de detección
+            </div>
+
+            <div id="top" class="card">
+
+                <h1>Primaria</h1>
+
+                <p>
+                    Conteste los siguientes reactivos de acuerdo a las capacidades obtenidas por el niño. Se recomienda responderlas con la ayuda del profesor
+                </p>
+
+                </br>
+                </br>
+            </div>
+
+            <div class="card" style="display:none;" id="PrimariaRes">
+
+                <!--COG-->
+
+                <div id="CogPri">
+
+                    <div class="Resultado1" id="CogPriBien">
+                        <h2 class="R1">Ámbito cognoscitivo</h2>
+
+                        En el ámbito cognoscitivo los resultados indican un buen desarrollo. Sin embargo si tiene dudas al respecto le recomentamos consultarlo con un especialista.
+                    </div>
+
+                    <div class="Resultado2" id="CogPriRegular">
+                        <h2 class="R2">Ámbito cognoscitivo</h2>
+
+                        En el ámbito cognoscitivo los resultados son regulares, se le recomienda consultar con un especialista
+                    </div>
+
+                    <div class="Resultado3" id="CogPriMal">
+                        <h2 class="R3">Ámbito cognoscitivo</h2>
+
+                        En el ámbito cognoscitivo los resultados indican una gran dificultad en el desarrollo del niño. Se recomienda consultar con un especialista.
+                    </div>
+                    </div>
+                    <!--PM-->
+
+                    <div id="PmPri">
+
+                        <div class="Resultado1" id="PmPriBien">
+                            <h2 class="R1">Ámbito psicomotriz</h2>
+
+                            En el ámbito psicomotriz los resultados indican un buen desarrollo. Sin embargo si tiene dudas al respecto le recomentamos consultarlo con un especialista.
+                        </div>
+
+                        <div class="Resultado2" id="PmPriRegular">
+                            <h2 class="R2">Ámbito psicomotriz</h2>
+
+                            En el ámbito psicomotriz los resultados son regulares, se le recomienda consultar con un especialista
+                        </div>
+
+                        <div class="Resultado3" id="PmPriMal">
+                            <h2 class="R3">Ámbito psicomotriz</h2>
+
+                            En el ámbito psicomotriz los resultados indican una gran dificultad en el desarrollo del niño. Se recomienda consultar con un especialista.
+                        </div>
+
+
+                    </div>
+
+                    <!--PS-->
+
+                    <div id="PsPri">
+
+                        <div class="Resultado1" id="PsPriBien">
+                            <h2 class="R1">Ámbito psicosocial</h2>
+
+                            En el ámbito psicosocial los resultados indican un buen desarrollo. Sin embargo si tiene dudas al respecto le recomentamos consultarlo con un especialista.
+                        </div>
+
+                        <div class="Resultado2" id="PsPriRegular">
+                            <h2 class="R2">Ámbito psicosocial</h2>
+
+                            En el ámbito psicosocial los resultados son regulares, se le recomienda consultar con un especialista
+                        </div>
+
+                        <div class="Resultado3" id="PsPriMal">
+                            <h2 class="R3">Ámbito psicosocial</h2>
+
+                            En el ámbito psicosocial los resultados indican una gran dificultad en el desarrollo del niño. Se recomienda consultar con un especialista.
+                        </div>
+
+
+                    </div>
+                    <div>
+                        <label>
+                            Aquí puedes buscar ayuda profesional
+                        </label>
+                        <label class="fas fa-address-book fa-4x" onclick="location.href='busqueda.html'" style="color:#ba143b;"></label>
+                    </div>
+                </div>
+
+                    <div class="card">
+
+
+
+                        <form action=" " method="get" id="Cognoscitivo-primaria">
+                            <div>
+                                <h2> Ámbito cognoscitivo</h2>
+
+                                <label id="Pri1">1._Se distrae fácilmente y pierde interés y la atención en clases</label>
+                                <br />
+                                <br />
+                                <select id="CPri1">
+                                    <option value="0">Sí</option>
+                                    <option value="1">No</option>
+                                </select>
+                                <br />
+                                <br />
+
+                                <label id="Pri2">2._Se fatiga con rapidez y no mantiene su atención por un periodo prolongado.</label>
+                                <br />
+                                <br />
+                                <select id="CPri2">
+                                    <option value="0">Sí</option>
+                                    <option value="1">No</option>
+                                </select>
+                                <br />
+                                <br />
+
+                                <label id="Pri3">3._Continúa mucho tiempo en la misma actividad sin detenerse o cambia con rapidez de actividad</label>
+                                <br />
+                                <br />
+                                <select id="CPri3">
+                                    <option value="0">Sí</option>
+                                    <option value="1">No</option>
+                                </select>
+                                <br />
+                                <br />
+
+                                <label id="Pri4">4._Experimenta dificultad para entender y seguir instrucciones, así como para recordar lo que acaba de decir</label>
+                                <br />
+                                <br />
+                                <select id="CPri4">
+                                    <option value="0">Sí</option>
+                                    <option value="1">No</option>
+                                </select>
+                                <br />
+                                <br />
+
+                                <label id="Pri5">5._ Muchas veces no puede realizar laactividad solo, requiere asesoría directa</label>
+                                <br />
+                                <br />
+                                <select id="CPri5">
+                                    <option value="0">Sí</option>
+                                    <option value="1">No</option>
+                                </select>
+                                <br />
+                                <br />
+
+                                <label id="Pri6">6._Muestra limitada curiosidad por conocer y explorar lo que lo rodea</label>
+                                <br />
+                                <br />
+                                <select id="CPri6">
+                                    <option value="0">Sí</option>
+                                    <option value="1">No</option>
+                                </select>
+                                <br />
+                                <br />
+
+                                <label id="Pri7">7._Requiere apoyo para inicar, desarrollar y terminar sus trabajos escolares</label>
+                                <br />
+                                <br />
+                                <select id="CPri7">
+                                    <option value="0">Sí</option>
+                                    <option value="1">No</option>
+                                </select>
+                                <br />
+                                <br />
+
+                                <label id="Pri8">8._Presenta dificultades en la escritura</label>
+                                <br />
+                                <br />
+                                <select id="CPri8">
+                                    <option value="0">Sí</option>
+                                    <option value="1">No</option>
+                                </select>
+                                <br />
+                                <br />
+
+                                <label id="Pri9">9._Invierte eletras, números, palabras o frases cuando lee, copia o escribe</label>
+                                <br />
+                                <br />
+
+                                <select id="CPri9">
+                                    <option value="0">Sí</option>
+                                    <option value="1">No</option>
+                                </select>
+                                <br />
+                                <br />
+
+                                <label id="Pri10">10._Manifiesta dificultades en la lectura, inclusive de textos cortos</label>
+                                <br />
+                                <br />
+                                <select id="CPri10">
+                                    <option value="0">Sí</option>
+                                    <option value="1">No</option>
+                                </select>
+                                <br />
+                                <br />
+
+                                <label id="Pri11">11._Presenta dificultades en la comprensión de lo que lee</label>
+                                <br />
+                                <br />
+                                <select id="CPri11">
+                                    <option value="0">Sí</option>
+                                    <option value="1">No</option>
+                                </select>
+                                <br />
+                                <br />
+
+                                <label id="Pri12">12._Registra dificultades en la comprensión de lo que lee</label>
+                                <br />
+                                <br />
+                                <select id="CPri12">
+                                    <option value="0">Sí</option>
+                                    <option value="1">No</option>
+                                </select>
+                                <br />
+                                <br />
+
+                                <label id="Pri13">13._Registra dificultades en la comprensión de un problema matemático </label>
+                                <br />
+                                <br />
+                                <select id="CPri13">
+                                    <option value="0">Sí</option>
+                                    <option value="1">No</option>
+                                </select>
+                                <br />
+                                <br />
+
+                                <label id="Pri14">14._Nececita la repetición constante para adquirir un conocimiento nuevo</label>
+                                <br />
+                                <br />
+                                <select id="CPri14">
+                                    <option value="0">Sí</option>
+                                    <option value="1">No</option>
+                                </select>
+                                <br />
+                                <br />
+
+                                <label id="Pri15">15._Se acerca mucho para observar los objetos; al escribir o leer, abre y cierra los ojos rápidamente</label>
+                                <br />
+                                <br />
+                                <select id="CPri15">
+                                    <option value="0">Sí</option>
+                                    <option value="1">No</option>
+                                </select>
+                                <br />
+                                <br />
+
+                                <label id="Pri16">16._Maneja un escaso vocabulario, sólo dice algunas palabras</label>
+                                <br />
+                                <br />
+                                <select id="CPri16">
+                                    <option value="0">Sí</option>
+                                    <option value="1">No</option>
+                                </select>
+                                <br />
+                                <br />
+
+                                <label id="Pri17">17._Tartamudea</label>
+                                <br />
+                                <br />
+                                <select id="CPri17">
+                                    <option value="0">Sí</option>
+                                    <option value="1">No</option>
+                                </select>
+                                <br />
+                                <br />
+
+                                <label id="Pri18">18._Presenta alguna alteración física que lo limíta a comunicarse</label>
+                                <br />
+                                <br />
+                                <select id="CPri18">
+                                    <option value="0">Sí</option>
+                                    <option value="1">No</option>
+                                </select>
+                                <br />
+                                <br />
+
+                                <label id="Pri19">19._No reacciona a sonidos fuertes y bruscos</label>
+                                <br />
+                                <br />
+                                <select id="CPri19">
+                                    <option value="0">Sí</option>
+                                    <option value="1">No</option>
+                                </select>
+                                <br />
+                                <br />
+
+                                <label id="Pri20">20._Se queja de dolor persistente o de zumbido en los oídos</label>
+                                <br />
+                                <br />
+                                <select id="CPri20">
+                                    <option value="0">Sí</option>
+                                    <option value="1">No</option>
+                                </select>
+                                <br />
+                                <br />
+
+                                <label id="Pri21">21._Pregunta con frecuencia qué o cómo, e indica que no entiende lo que le dicen</label>
+                                <br />
+                                <br />
+                                <select id="CPri21">
+                                    <option value="0">Sí</option>
+                                    <option value="1">No</option>
+                                </select>
+                                <br />
+                                <br />
+
+                                <label id="Pri22">22._Experimenta dificultades para establecer una comunicación con los demás</label>
+                                <br />
+                                <br />
+                                <select id="CPri22">
+                                    <option value="0">Sí</option>
+                                    <option value="1">No</option>
+                                </select>
+                                <br />
+                                <br />
+
+                            </div>
+
+
+
+                            <h2>Ámbito psicomotor</h2>
+
+                            <div>
+
+                                <label id="Pri25">1._Choca frecuentemente con los objetos que se encuentran a su paso</label>
+                                <br />
+                                <br />
+                                <select id="PmPri1">
+                                    <option value="0">Sí</option>
+                                    <option value="1">No</option>
+                                </select>
+                                <br />
+                                <br />
+
+                                <label id="Pri25">2._Cae con frecuencia</label>
+                                <br />
+                                <br />
+                                <select id="PmPri2">
+                                    <option value="0">Sí</option>
+                                    <option value="1">No</option>
+                                </select>
+                                <br />
+                                <br />
+
+                                <label id="Pri26">3._Tiene dificultad para alternar los pies al caminar o correr</label>
+                                <br />
+                                <br />
+                                <select id="PmPri3">
+                                    <option value="0">Sí</option>
+                                    <option value="1">No</option>
+                                </select>
+                                <br />
+                                <br />
+
+                                <label id="Pri27">4._No tiene movilidad en alguna parte del cuerpo</label>
+                                <br />
+                                <br />
+                                <select id="PmPri4">
+                                    <option value="0">Sí</option>
+                                    <option value="1">No</option>
+                                </select>
+                                <br />
+                                <br />
+
+                                <label id="Pri28">5._Camina o corre con mucha dificuktad o presenta dolor</label>
+                                <br />
+                                <br />
+                                <select id="PmPri5">
+                                    <option value="0">Sí</option>
+                                    <option value="1">No</option>
+                                </select>
+                                <br />
+                                <br />
+
+                                <label id="Pri29">6._Le cuesta trabajo estar erguido</label>
+                                <br />
+                                <br />
+                                <select id="PmPri6">
+                                    <option value="0">Sí</option>
+                                    <option value="1">No</option>
+                                </select>
+                                <br />
+                                <br />
+
+                                <label id="Pri30">7._Tiene dificultad para tomar de manera adecuada un lápiz, un vaso, cuaderno, etcétera</label>
+                                <br />
+                                <br />
+                                <select id="PmPri7">
+                                    <option value="0">Sí</option>
+                                    <option value="1">No</option>
+                                </select>
+                                <br />
+                                <br />
+
+                                <label id="Pri31">8._No controla sus trazos al escribir, dibujar caminos, marcar contornos, unir los dibujos etcétera.</label>
+                                <br />
+                                <br />
+                                <select id="PmPri8">
+                                    <option value="0">Sí</option>
+                                    <option value="1">No</option>
+                                </select>
+                                <br />
+                                <br />
+
+                            </div>
+
+                            <h2>Ámbito psicosocial</h2>
+
+
+                            <div>
+
+                                <label id="Pri32">1._Se enoja o pelea mucho sin razón aparente</label>
+                                <br />
+                                <br />
+                                <select id="PsPri1">
+                                    <option value="0">Sí</option>
+                                    <option value="1">No</option>
+                                </select>
+                                <br />
+                                <br />
+
+                                <label id="Pri33">2._Es tímido y triste, no se relaciona con otros niños</label>
+                                <br />
+                                <br />
+                                <select id="PsPri2">
+                                    <option value="0">Sí</option>
+                                    <option value="1">No</option>
+                                </select>
+                                <br />
+                                <br />
+
+                                <label id="Pri34">3._Presenta conductas como morderse, golpearse, chuparse el dedo o la mano entera; hace berrinches exagerados frecuentes</label>
+                                <br />
+                                <br />
+                                <select id="PsPri3">
+                                    <option value="0">Sí</option>
+                                    <option value="1">No</option>
+                                </select>
+                                <br />
+                                <br />
+
+                                <label id="Pri35">4._Muestra un patrón repetitivo y persistente de conducta rebelde, desobediencia y falta de respeto a la autoridad</label>
+                                <br />
+                                <br />
+                                <select id="PsPri4">
+                                    <option value="0">Sí</option>
+                                    <option value="1">No</option>
+                                </select>
+                                <br />
+                                <br />
+
+                                <label id="Pri36">5._Necesita mucho apoyo de maestros o compañeros</label>
+                                <br />
+                                <br />
+                                <select id="PsPri5">
+                                    <option value="0">Sí</option>
+                                    <option value="1">No</option>
+                                </select>
+                                <br />
+                                <br />
+
+                                <label id="Pri37">6._No se adapta con facilidad a situaciones nuevas o diferentes que tengan amyor grado de dificultad</label>
+                                <br />
+                                <br />
+                                <select id="PsPri6">
+                                    <option value="0">Sí</option>
+                                    <option value="1">No</option>
+                                </select>
+                                <br />
+                                <br />
+
+                                <label id="Pri38">7._Se aísla de los juegos</label>
+                                <br />
+                                <br />
+                                <select id="PsPri7">
+                                    <option value="0">Sí</option>
+                                    <option value="1">No</option>
+                                </select>
+                                <br />
+                                <br />
+
+                                <label id="Pri39">8._Tiende a abusar de los niños de menor edad</label>
+                                <br />
+                                <br />
+                                <select id="PsPri8">
+                                    <option value="0">Sí</option>
+                                    <option value="1">No</option>
+                                </select>
+                                <br />
+                                <br />
+
+                                <input type="button" name="EvaluaPrimaria" id="EvaluaPrimaria" value="Evaluar" onclick="EvaluarPrimaria()" />
+
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+    <script type="text/javascript" src="js/Tests/PsicosocialmotrizPri.js"></script>
+
+</body>
+
+</html>

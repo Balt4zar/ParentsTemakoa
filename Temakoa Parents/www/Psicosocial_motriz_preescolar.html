@@ -1,0 +1,548 @@
+﻿0<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.min.css">
+    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.colors.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <div class="page">
+        <div class="page-content infinite-scroll">
+
+
+
+
+            <div class="navito">
+                <div class="leftIcon">
+                    <a onclick="location.href='index.html'" class="fas fa-home"></a>
+                </div>
+                Registros de detección
+            </div>
+
+            <div class="card">
+                <h1>Preescolar</h1>
+
+                <p>
+                    Conteste los siguientes reactivos de acuerdo a las capacidades obtenidas por el niño. Se recomienda responderlas con la ayuda del profesor
+                </p>
+
+                </br>
+               
+            </div>
+
+            <div class="card" style="display:none;" id="PreescolarRes">
+
+                <!--COG-->
+
+                <div id="CogPre">
+
+                    <div class="Resultado1" id="CogPreBien">
+                        <h2 class="R1">Ámbito cognoscitivo</h2>
+                        En el ámbito cognoscitivo los resultados indican un buen desarrollo. Sin embargo si tiene dudas al respecto le recomentamos consultarlo con un especialista.
+
+                    </div>
+
+
+                    <div class="Resultado2" id="CogPreRegular">
+                        <h2 class="R2">Ámbito cognoscitivo</h2>
+
+                        En el ámbito cognoscitivo los resultados son regulares, se le recomienda consultar con un especialista
+                    </div>
+
+
+                    <div class="Resultado3" id="CogPreMal">
+                        <h2 class="R3">Ámbito cognoscitivo</h2>
+
+                        En el ámbito cognoscitivo los resultados indican una gran dificultad en el desarrollo del niño. Se recomienda consultar con un especialista.
+                    </div>
+
+                    <!--PM-->
+
+                    <div id="PmPre">
+
+
+
+                        <div class="Resultado1" id="PmPreBien">
+                            <h2 class="R1">Ámbito psicomotriz</h2>
+                            En el ámbito psicomotriz los resultados indican un buen desarrollo. Sin embargo si tiene dudas al respecto le recomentamos consultarlo con un especialista.
+                        </div>
+
+
+                        <div class="Resultado2" id="PmPreRegular">
+                            <h2 class="R2">Ámbito psicomotriz</h2>
+                            En el ámbito psicomotriz los resultados son regulares, se le recomienda consultar con un especialista
+                        </div>
+
+
+
+                        <div class="Resultado3" id="PmPreMal">
+                            <h2 class="R3">Ámbito psicomotriz</h2>
+                            En el ámbito psicomotriz los resultados indican una gran dificultad en el desarrollo del niño. Se recomienda consultar con un especialista.
+                        </div>
+
+
+                    </div>
+
+                    <!--PS-->
+
+                    <div id="PsPre">
+
+
+                        <div class="Resultado1" id="PsPreBien">
+                            <h2 class="R1">Ámbito psicosocial</h2>
+                            En el ámbito psicosocial los resultados indican un buen desarrollo. Sin embargo si tiene dudas al respecto le recomentamos consultarlo con un especialista.
+                        </div>
+
+
+                        <div class="Resultado2" id="PsPreRegular">
+                            <h2 class="R2">Ámbito psicosocial</h2>
+                            En el ámbito psicosocial los resultados son regulares, se le recomienda consultar con un especialista
+                        </div>
+
+
+                        <div class="Resultado3" id="PsPreMal">
+                            <h2 class="R3">Ámbito psicosocial</h2>
+                            En el ámbito psicosocial los resultados indican una gran dificultad en el desarrollo del niño. Se recomienda consultar con un especialista.
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+                <div>
+                    <label>
+                        Aquí puedes buscar ayuda profesional
+                    </label>
+                    <label class="fas fa-address-book fa-4x" onclick="location.href='busqueda.html'" style="color:#ba143b;"></label>
+                </div>
+
+            </div>
+
+
+            <div class="card">
+
+                <form action="#" method="get" id="Cognoscitivo-preescolar">
+
+                    <h3> Ámbito cognoscitivo</h3>
+
+                    <div>
+
+                        <label>1._Muestra una actitud indiferente ante los estímulos que recibe</label>
+                        <br />
+                        <br />
+                        <select id="CPre1">
+                            <option value="0">Sí</option>
+                            <option value="1">No</option>
+                        </select>
+                        <br />
+                        <br />
+
+                        <label>2._Le implica mucho esfuerzo permanecer quieto en un mismo sitio por espacioes cortos de tiempo</label>
+                        <br />
+                        <br />
+                        <select id="CPre2">
+                            <option value="0">Sí</option>
+                            <option value="1">No</option>
+                        </select>
+                        <br />
+                        <br />
+
+                        <label>3._Presenta falta de interés en las actividades de grupo</label>
+                        <br />
+                        <br />
+                        <select id="CPre3">
+                            <option value="0">Sí</option>
+                            <option value="1">No</option>
+                        </select>
+                        <br />
+                        <br />
+
+                        <label>4._A menudo no puede terminar lo que comienza</label>
+                        <br />
+                        <br />
+                        <select id="CPre4">
+                            <option value="0">Sí</option>
+                            <option value="1">No</option>
+                        </select>
+                        <br />
+                        <br />
+
+                        <label>5._ Se le dificulta entender instrucciones</label>
+                        <br />
+                        <br />
+                        <select id="CPre5">
+                            <option value="0">Sí</option>
+                            <option value="1">No</option>
+                        </select>
+                        <br />
+                        <br />
+
+                        <label>6._Se cansa con facilidad y no le importa la calidad al realizar sus trabajos</label>
+                        <br />
+                        <br />
+                        <select id="CPre6">
+                            <option value="0">Sí</option>
+                            <option value="1">No</option>
+                        </select>
+                        <br />
+                        <br />
+
+                        <label>7._Pide que se le repita una orden varias veces</label>
+                        <br />
+                        <br />
+                        <select id="CPre7">
+                            <option value="0">Sí</option>
+                            <option value="1">No</option>
+                        </select>
+                        <br />
+                        <br />
+
+                        <label>8._Tiene dificultad para organizarse y terminar el trabajo</label>
+                        <br />
+                        <br />
+                        <select id="CPre8">
+                            <option value="0">Sí</option>
+                            <option value="1">No</option>
+                        </select>
+                        <br />
+                        <br />
+
+                        <label>9._Presenta dificultad para recordar lo que acaba de decir</label>
+                        <br />
+                        <br />
+                        <select id="CPre9">
+                            <option value="0">Sí</option>
+                            <option value="1">No</option>
+                        </select>
+                        <br />
+                        <br />
+
+                        <label>10._No manifiesta interés en las actividades de lectura</label>
+                        <br />
+                        <br />
+                        <select id="CPre10">
+                            <option value="0">Sí</option>
+                            <option value="1">No</option>
+                        </select>
+                        <br />
+                        <br />
+
+                        <label>11._Se acerca demasiado los objetos a los ojos para observarlos o reconocerlos</label>
+                        <br />
+                        <br />
+                        <select id="CPre11">
+                            <option value="0">Sí</option>
+                            <option value="1">No</option>
+                        </select>
+                        <br />
+                        <br />
+
+                        <label>12._Se le dificulta identificar sonidos</label>
+                        <br />
+                        <br />
+                        <select id="CPre12">
+                            <option value="0">Sí</option>
+                            <option value="1">No</option>
+                        </select>
+                        <br />
+                        <br />
+
+                        <label>13._Se abstiene de cooperar en los juegos de grupo</label>
+                        <br />
+                        <br />
+                        <select id="CPre13">
+                            <option value="0">Sí</option>
+                            <option value="1">No</option>
+                        </select>
+                        <br />
+                        <br />
+
+                        <label>14._No puede realizar la actividad solo, necesita ayuda directa y permanente</label>
+                        <br />
+                        <br />
+                        <select id="CPre14">
+                            <option value="0">Sí</option>
+                            <option value="1">No</option>
+                        </select>
+                        <br />
+                        <br />
+
+                        <label>15._No habla o usa sólo unas palabras o frases de dos palabras</label>
+                        <br />
+                        <br />
+                        <select id="CPre15">
+                            <option value="0">Sí</option>
+                            <option value="1">No</option>
+                        </select>
+
+                        <label>16._Maneja lenguaje difícil de entender</label>
+                        <br />
+                        <br />
+                        <select id="CPre16">
+                            <option value="0">Sí</option>
+                            <option value="1">No</option>
+                        </select>
+                        <br />
+                        <br />
+
+                        <label>17._No articula algunos fonemas de manera correcta</label>
+                        <br />
+                        <br />
+                        <select id="CPre17">
+                            <option value="0">Sí</option>
+                            <option value="1">No</option>
+                        </select>
+                        <br />
+                        <br />
+
+                        <label>18._Tartamudea</label>
+                        <br />
+                        <br />
+                        <select id="CPre18">
+                            <option value="0">Sí</option>
+                            <option value="1">No</option>
+                        </select>
+                        <br />
+                        <br />
+
+                        <label>19._No se comunica con su instructor o sus compañeros</label>
+                        <br />
+                        <br />
+                        <select id="CPre19">
+                            <option value="0">Sí</option>
+                            <option value="1">No</option>
+                        </select>
+                        <br />
+                        <br />
+
+                        <label>20._Se comunica por medio de mímica o gestos</label>
+                        <br />
+                        <br />
+                        <select id="CPre20">
+                            <option value="0">Sí</option>
+                            <option value="1">No</option>
+                        </select>
+                        <br />
+                        <br />
+
+                        <label>21._Responde rara vez cuando otros le hablan</label>
+                        <br />
+                        <br />
+                        <select id="CPre21">
+                            <option value="0">Sí</option>
+                            <option value="1">No</option>
+                        </select>
+                        <br />
+                        <br />
+
+                        <label>22._No presta atención cuando se le habla</label>
+                        <br />
+                        <br />
+                        <select id="CPre22">
+                            <option value="0">Sí</option>
+                            <option value="1">No</option>
+                        </select>
+                        <br />
+                        <br />
+
+                    </div>
+
+                    <h3>Ámbito psicomotor</h3>
+
+                    <div>
+
+                        <label>1._Muestra una actitud indiferente ante los estímulos que recibe</label>
+                        <br />
+                        <br />
+                        <select id="PmPre1">
+                            <option value="0">Sí</option>
+                            <option value="1">No</option>
+                        </select>
+                        <br />
+                        <br />
+
+                        <label>2._Camina y corre con dificultad</label>
+                        <br />
+                        <br />
+                        <select id="PmPre2">
+                            <option value="0">Sí</option>
+                            <option value="1">No</option>
+                        </select>
+                        <br />
+                        <br />
+
+                        <label>3._Al subir las escaleras no alterna los pies, requiere apoyo</label>
+                        <br />
+                        <br />
+                        <select id="PmPre3">
+                            <option value="0">Sí</option>
+                            <option value="1">No</option>
+                        </select>
+                        <br />
+                        <br />
+
+                        <label>4._Tropieza con objetos que se encuentra a su paso</label>
+                        <br />
+                        <br />
+                        <select id="PmPre4">
+                            <option value="0">Sí</option>
+                            <option value="1">No</option>
+                        </select>
+                        <br />
+                        <br />
+
+                        <label>5._ No puede cambiar de una acción o actividad a otra con facilidad</label>
+                        <br />
+                        <br />
+                        <select id="PmPre5">
+                            <option value="0">Sí</option>
+                            <option value="1">No</option>
+                        </select>
+                        <br />
+                        <br />
+
+                        <label>6._ Usa todos los dedos de las manos para agarrar o levantar objetos pequeños</label>
+                        <br />
+                        <br />
+                        <select id="PmPre6">
+                            <option value="0">Sí</option>
+                            <option value="1">No</option>
+                        </select>
+                        <br />
+                        <br />
+
+                        <label>7._No controla sus trazos al dibujar caminos, marcar contornos, unir los dibujos, etc.</label>
+                        <br />
+                        <br />
+                        <select id="PmPre7">
+                            <option value="0">Sí</option>
+                            <option value="1">No</option>
+                        </select>
+                        <br />
+                        <br />
+
+                        <label>8._No toma adecuadamente el lapiz y las herramientas</label>
+                        <br />
+                        <br />
+                        <select id="PmPre8">
+                            <option value="0">Sí</option>
+                            <option value="1">No</option>
+                        </select>
+                        <br />
+                        <br />
+
+                    </div>
+
+                    <h3>Ámbito psicosocial</h3>
+
+                    <div>
+
+                        <label>1._Necesita mucho apoyo de su maestro</label>
+                        <br />
+                        <br />
+                        <select id="PsPre1">
+                            <option value="0">Sí</option>
+                            <option value="1">No</option>
+                        </select>
+                        <br />
+                        <br />
+
+                        <label>2._No se adapta con facilidad a situaciones nuevas, diferentes, que tengan mayor grado de dificultad</label>
+                        <br />
+                        <br />
+                        <select id="PsPre2">
+                            <option value="0">Sí</option>
+                            <option value="1">No</option>
+                        </select>
+                        <br />
+                        <br />
+
+                        <label>3._Muerde o maltrata sus pertenencias y sus trabajos escolares</label>
+                        <br />
+                        <br />
+                        <select id="PsPre3">
+                            <option value="0">Sí</option>
+                            <option value="1">No</option>
+                        </select>
+                        <br />
+                        <br />
+
+                        <label>4._Muestra inadaptación escolar prolongada</label>
+                        <br />
+                        <br />
+                        <select id="PsPre4">
+                            <option value="0">Sí</option>
+                            <option value="1">No</option>
+                        </select>
+                        <br />
+                        <br />
+
+                        <label>5._Llora por cualquier cosa</label>
+                        <br />
+                        <br />
+                        <select id="PsPre5">
+                            <option value="0">Sí</option>
+                            <option value="1">No</option>
+                        </select>
+                        <br />
+                        <br />
+
+                        <label>6._No expresa o verbaliza sus sentimientos</label>
+                        <br />
+                        <br />
+                        <select id="PsPre6">
+                            <option value="0">Sí</option>
+                            <option value="1">No</option>
+                        </select>
+                        <br />
+                        <br />
+
+                        <label>7._No juega con otros niños</label>
+                        <br />
+                        <br />
+                        <select id="PsPre7">
+                            <option value="0">Sí</option>
+                            <option value="1">No</option>
+                        </select>
+                        <br />
+                        <br />
+
+                        <label>8._No interactúa con los adultos</label>
+                        <br />
+                        <br />
+                        <select id="PsPre8">
+                            <option value="0">Sí</option>
+                            <option value="1">No</option>
+                        </select>
+                        <br />
+                        <br />
+
+                        <input type="button" name="EvaluaPreescolar" id="EvaluaPreescolar" value="Evaluar" onclick="EvaluaPre()" />
+
+
+                </form>
+            </div>
+        </div>
+
+        </div>
+
+     
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+    <script type="text/javascript" src="js/Tests/PsicosocialmotrizPre.js"></script>
+
+
+
+</body>
+
+</html>
