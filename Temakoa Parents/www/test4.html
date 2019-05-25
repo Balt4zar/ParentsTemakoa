@@ -12,91 +12,99 @@
 </head>
 
 <body>
-    <div class="page">
-        <div class="page-content infintie-scroll">
+    <div class="views">
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+            <div class="navito">
+                <div class="leftIcon">
+                    <a onclick="location.href='index.html'" class="fas fa-home"></a>
+                </div>
+                Temakoa
+            </div>
+            <div class="pages navbar-through toolbar-through">
+                <!-- Page, "data-page" contains page name -->
 
-                <div class="navito">
-                    <div class="leftIcon">
-                        <a onclick="location.href='index.html'" class="fas fa-home"></a>
+                <div data-page="index" class="page">
+                    <!-- Scrollable page content -->
+                    <div class="page-content infinite-scroll">
+
+
+                        <div class="card">
+                            <h2>
+                                Conteste los siguientes reactivos de acuerdo a las capacidades obtenidas por el niño. Si la respuesta es un sí, presione el botón que está al lado, si no, pase al siguiente reactivo
+                            </h2>
+                        </div>
+
+                        <div id="Bien" name="Bien" class="Resultado1">
+                            <h3 class="R1">
+                                Bien
+                            </h3>
+                            <p>
+                                Los resultados parecen ser los normales en un niño sano, sin embargo si no está convencido aún, puede pasar al próximo test haciendo click en el siguiente botón
+                            </p>
+                            <button class="Siguiente" onclick="location.href='Psicosocial_motriz_preescolar.html'">Siguiente test</button>
+                        </div>
                     </div>
-                    De 4 a 5 años
-                </div>
 
-                <div class="card">
-                    <h2>
-                        Conteste los siguientes reactivos de acuerdo a las capacidades obtenidas por el niño. Si la respuesta es un sí, presione el botón que está al lado, si no, pase al siguiente reactivo
-                    </h2>
-                </div>
-
-                <div id="Bien" name="Bien" class="Resultado1">
-                        <h3 class="R1">
-                            Bien
+                    <div id="Regular" name="Regular" class="Resultado2">
+                        <h3 class="R2">
+                            Regular
                         </h3>
                         <p>
-                            Los resultados parecen ser los normales en un niño sano, sin embargo si no está convencido aún, puede pasar al próximo test haciendo click en el siguiente botón
+                            Si bien los resultados no resultan alarmantes, le recomendamos realizar el siguiente test.
+                        </p>
+                        <button class="Siguiente" onclick="location.href='Psicosocial_motriz_preescolar.html'">Siguiente test</button>
+
+                    </div>
+
+                    <div id="Mal" name="Mal" class="Resultado3">
+                        <h3 class="R3">
+                            Alarma
+                        </h3>
+                        <p>
+                            Los resultados reflejan mayor severidad. Por favor, realize el siguiente test.
                         </p>
                         <button class="Siguiente" onclick="location.href='Psicosocial_motriz_preescolar.html'">Siguiente test</button>
                     </div>
-                </div>
 
-                <div id="Regular" name="Regular" class="Resultado2">
-                    <h3 class="R2">
-                        Regular
-                    </h3>
-                    <p>
-                        Si bien los resultados no resultan alarmantes, le recomendamos realizar el siguiente test.
-                    </p>
-                    <button class="Siguiente" onclick="location.href='Psicosocial_motriz_preescolar.html'">Siguiente test</button>
+                    <div class="card">
+                        <div class="contenedor">
+                            <article>
+                                <form action="" method="get">
 
-                </div>
+                                    <label class="reactivo">1._ Se cuida solo en el baño</label>
+                                    <input id="4-1" type="checkbox" />
+                                    <br />
+                                    <label class="reactivo">2._ Se lava la cara sin ayuda</label>
+                                    <input id="4-2" type="checkbox" />
+                                    <br />
+                                    <label class="reactivo">3._ Anda en el vecindario sin vigilancia</label>
+                                    <input id="4-3" type="checkbox" />
+                                    <br />
+                                    <label class="reactivo">4._ Se viste solo</label>
+                                    <input id="4-4" type="checkbox" />
+                                    <br />
+                                    <label class="reactivo">5._ Usa lápiz o crayón para dibujar</label>
+                                    <input id="4-5" type="checkbox" />
+                                    <br />
 
-                <div id="Mal" name="Mal" class="Resultado3">
-                    <h3 class="R3">
-                        Alarma
-                    </h3>
-                    <p>
-                        Los resultados reflejan mayor severidad. Por favor, realize el siguiente test.
-                    </p>
-                    <button class="Siguiente" onclick="location.href='Psicosocial_motriz_preescolar.html'">Siguiente test</button>
-                </div>
+                                    <input type="button" name="btn_eval" id="btn_eval" value="Evaluar" onclick="evaluar()" />
 
-                <div class="card">
-                    <div class="contenedor">
-                        <article>
-                            <form action="" method="get">
-
-                                <label class="reactivo">1._ Se cuida solo en el baño</label>
-                                <input id="4-1" type="checkbox" />
-                                <br />
-                                <label class="reactivo">2._ Se lava la cara sin ayuda</label>
-                                <input id="4-2" type="checkbox" />
-                                <br />
-                                <label class="reactivo">3._ Anda en el vecindario sin vigilancia</label>
-                                <input id="4-3" type="checkbox" />
-                                <br />
-                                <label class="reactivo">4._ Se viste solo</label>
-                                <input id="4-4" type="checkbox" />
-                                <br />
-                                <label class="reactivo">5._ Usa lápiz o crayón para dibujar</label>
-                                <input id="4-5" type="checkbox" />
-                                <br />
-
-                                <input type="button" name="btn_eval" id="btn_eval" value="Evaluar" onclick="evaluar()" />
-
-                            </form>
-                        </article>
+                                </form>
+                            </article>
+                        </div>
+                        <button onclick="location.href='about.html'">Volver al menú</button>
                     </div>
-                    <button onclick="location.href='about.html'">Volver al menú</button>
                 </div>
             </div>
         </div>
-    </div>
+        </div>
 
 
-    <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
-    <script type="text/javascript" src="js/my-app.js"></script>
-    <script type="text/javascript" src="js/Tests/test4.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+        <script type="text/javascript" src="js/my-app.js"></script>
+        <script type="text/javascript" src="js/Tests/test4.js"></script>
 
 
 

@@ -10,23 +10,30 @@
 
 </head>
 <body>
-    <div class="page">
-        <div class="page-content infintie-scroll">
-
-                <div class="navito">
-                    <div class="leftIcon">
-                        <a onclick="location.href='index.html'" class="fas fa-home"></a>
-                    </div>
-                    De 10 a 11 años
+    <div class="views">
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+            <div class="navito">
+                <div class="leftIcon">
+                    <a onclick="location.href='index.html'" class="fas fa-home"></a>
                 </div>
+                Temakoa
+            </div>
+            <div class="pages navbar-through toolbar-through">
+                <!-- Page, "data-page" contains page name -->
 
-                <div class="card">
-                    <h2>
-                        Conteste los siguientes reactivos de acuerdo a las capacidades obtenidas por el niño. Si la respuesta es un sí, presione el botón que está al lado, si no, pase al siguiente reactivo
-                    </h2>
-                </div>
+                <div data-page="index" class="page">
+                    <!-- Scrollable page content -->
+                    <div class="page-content infinite-scroll">
 
-                    <div id="Bien" name="Bien" class="Resultado1">
+
+                        <div class="card">
+                            <h2>
+                                Conteste los siguientes reactivos de acuerdo a las capacidades obtenidas por el niño. Si la respuesta es un sí, presione el botón que está al lado, si no, pase al siguiente reactivo
+                            </h2>
+                        </div>
+
+                        <div id="Bien" name="Bien" class="Resultado1">
                             <h3 class="R1">
                                 Bien
                             </h3>
@@ -36,59 +43,62 @@
 
                             <button class="Siguiente" onclick="location.href='Psicosocial_motriz_primaria.html'">Siguiente test</button>
 
+                        </div>
+
+                        <div id="Regular" name="Regular" class="Resultado2">
+                            <h3 class="R2">
+                                Regular
+                            </h3>
+                            <p>
+                                Si bien los resultados no resultan alarmantes, le recomendamos realizar el siguiente test.
+                            </p>
+
+                            <button class="Siguiente" onclick="location.href='Psicosocial_motriz_primaria.html'">Siguiente test</button>
+
+                        </div>
+
+                        <div id="Mal" name="Mal" class="Resultado3">
+                            <h3 class="R3">
+                                Alarma
+                            </h3>
+                            <p>
+                                Los resultados reflejan mayor severidad. Por favor, realize el siguiente test.
+                            </p>
+
+                            <button class="Siguiente" onclick="location.href='Psicosocial_motriz_primaria.html'">Siguiente test</button>
+
+                        </div>
+
+                        <div class="card">
+                            <article>
+                                <form action="" method="get">
+                                    <label class="reactivo">1._ Escribe ocasionalmente cartas cortas</label>
+                                    <input id="10-1" type="checkbox" />
+                                    <br />
+                                    <label class="reactivo">2._ Hace llamadas telefónicas</label>
+                                    <input id="10-2" type="checkbox" />
+                                    <br />
+                                    <label class="reactivo">3._ Hace pequeños trabajos remunerados</label>
+                                    <input id="10-3" type="checkbox" />
+                                    <br />
+                                    <label class="reactivo">4._ Responde a anuncios</label>
+                                    <input id="10-4" type="checkbox" />
+                                    <br />
+
+                                    <input type="button" name="btn_eval" id="btn_eval" value="Evaluar" onclick="evaluar()" />
+
+                                </form>
+
+                            </article>
+
+                            <button onclick="location.href='about.html'">Volver al menú</button>
+
+                        </div>
                     </div>
-
-                    <div id="Regular" name="Regular" class="Resultado2">
-                        <h3 class="R2">
-                            Regular
-                        </h3>
-                        <p>
-                            Si bien los resultados no resultan alarmantes, le recomendamos realizar el siguiente test.
-                        </p>
-
-                        <button class="Siguiente" onclick="location.href='Psicosocial_motriz_primaria.html'">Siguiente test</button>
-
-                    </div>
-
-                    <div id="Mal" name="Mal" class="Resultado3">
-                        <h3 class="R3">
-                            Alarma
-                        </h3>
-                        <p>
-                            Los resultados reflejan mayor severidad. Por favor, realize el siguiente test.
-                        </p>
-
-                        <button class="Siguiente" onclick="location.href='Psicosocial_motriz_primaria.html'">Siguiente test</button>
-
-                    </div>
-
-            <div class="card">
-                    <article>
-                        <form action="" method="get">
-                            <label class="reactivo">1._ Escribe ocasionalmente cartas cortas</label>
-                            <input id="10-1" type="checkbox" />
-                            <br />
-                            <label class="reactivo">2._ Hace llamadas telefónicas</label>
-                            <input id="10-2" type="checkbox" />
-                            <br />
-                            <label class="reactivo">3._ Hace pequeños trabajos remunerados</label>
-                            <input id="10-3" type="checkbox" />
-                            <br />
-                            <label class="reactivo">4._ Responde a anuncios</label>
-                            <input id="10-4" type="checkbox" />
-                            <br />
-
-                            <input type="button" name="btn_eval" id="btn_eval" value="Evaluar" onclick="evaluar()" />
-
-                        </form>
-
-                    </article>
-
-                    <button onclick="location.href='about.html'">Volver al menú</button>
-
                 </div>
                 </div>
             </div>
+        </div>
 
                 <script type="text/javascript" src="cordova.js"></script>
                 <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>

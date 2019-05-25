@@ -192,14 +192,6 @@ button{
     padding:3px 3px 3px 3px;
 }
 
-
-.Ficha-perfil {
-    font-size: 20px;
-    background-color: #efffef;
-    border: 5px #64877f;
-    font-color: black;
-}
-
 .button-nav{
    font-size:18px;
    margin-top:5px;
@@ -265,9 +257,7 @@ label{
     padding-top:10px;
     padding-bottom:30px;
     float:center;
-  
-
-    
+     
 }
 
 input[type='button']{
@@ -396,11 +386,8 @@ label{
 
 .leftIcon{
     margin-top:5px;
-    margin-bottom:10px;
     margin-left:20px;
-    align-items:left;
     float:left;
-    padding-bottom:10px;
     height:auto;
 
 }

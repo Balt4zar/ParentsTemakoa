@@ -11,23 +11,30 @@
 </head>
 <body>
 
-    <div class="page">
-        <div class="page-content infintie-scroll">
+    <div class="views">
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+            <div class="navito">
+                <div class="leftIcon">
+                    <a onclick="location.href='index.html'" class="fas fa-home"></a>
+                </div>
+                Temakoa
+            </div>
+            <div class="pages navbar-through toolbar-through">
+                <!-- Page, "data-page" contains page name -->
 
-                    <div class="navito">
-                        <div class="leftIcon">
-                            <a onclick="location.href='index.html'" class="fas fa-home"></a>
+                <div data-page="index" class="page">
+                    <!-- Scrollable page content -->
+                    <div class="page-content infinite-scroll">
+
+
+                        <div class="card">
+                            <h2>
+                                Conteste los siguientes reactivos de acuerdo a las capacidades obtenidas por el niño. Si la respuesta es un sí, presione el botón que está al lado, si no, pase al siguiente reactivo
+                            </h2>
                         </div>
-                        De 9 a 10 años
-                    </div>
 
-                    <div class="card">
-                        <h2>
-                            Conteste los siguientes reactivos de acuerdo a las capacidades obtenidas por el niño. Si la respuesta es un sí, presione el botón que está al lado, si no, pase al siguiente reactivo
-                        </h2>
-                    </div>
-
-                    <di id="Bien" name="Bien" class="Resultado1">
+                        <di id="Bien" name="Bien" class="Resultado1">
                             <h3 class="R1">
                                 Bien
                             </h3>
@@ -87,11 +94,14 @@
 
                     </div>
                 </div>
+                </div>
+            </div>
+        </div>
 
-            <script type="text/javascript" src="cordova.js"></script>
-            <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
-            <script type="text/javascript" src="js/my-app.js"></script>
-            <script type="text/javascript" src="js/Tests/test9.js"></script>
+                <script type="text/javascript" src="cordova.js"></script>
+                <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+                <script type="text/javascript" src="js/my-app.js"></script>
+                <script type="text/javascript" src="js/Tests/test9.js"></script>
 
 
 

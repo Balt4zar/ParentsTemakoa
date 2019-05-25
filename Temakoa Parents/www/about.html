@@ -11,72 +11,79 @@
     </head>
 
 <body>
+    <div class="views">
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+            <div class="navito">
+                <div class="leftIcon">
+                    <a onclick="location.href='index.html'" class="fas fa-home"></a>
+                </div>
+                Temakoa
+            </div>
+            <div class="pages navbar-through toolbar-through">
+                <!-- Page, "data-page" contains page name -->
 
-   
+                <div data-page="index" class="page">
+                    <!-- Scrollable page content -->
+                    <div class="page-content infinite-scroll">
 
-    <div class="page">
-        <div class="page-content infinite-scroll">
-                <div class="navito">
-                    <div class="leftIcon">
-                        <a onclick="location.href='index.html'" class="fas fa-home"></a>
+                        <div class="card">
+                            <h2> ¡Gracias por usar Temakoa! Por favor siga los siguientes pasos </h2>
+                            <p> 1.- Seleccione el rango de edad del sujeto a evaluar </p>
+                            <p> 2.- Conteste de manera sincera el cuestionario. </p>
+
+                            <p> ADVERTENCIA: Este test solamente arroja una estimación sobre la gravedad del problema. Por ningpún motivo debe tomar esto como un diagnóstico definitivo, esto está solamente con el fin de orientarle a usted para acudir a la ayuda que requiera. </p>
+
+                            <h2>  Escala de madurez social de Vineland </h2>
+
+
+                            <!--Preescolar-->
+                            <button onclick="location.href ='test3.html'" class="Opcion-Lista"> De 3 a 4 años </button>
+                            <br />
+                            <br />
+                            <button onclick="location.href ='test4.html'" class="Opcion-Lista"> De 4 a 5 años </button>
+                            <br />
+                            <br />
+                            <button onclick="location.href ='test5.html'" class="Opcion-Lista"> De 5 a 6 años </button>
+                            <br />
+
+                            <!--Fin de preescolar-->
+                            <!--Primaria-->
+
+                            <br />
+                            <button onclick="location.href ='test6.html'" class="Opcion-Lista"> De 6 a 7 años </button>
+                            <br />
+                            <br />
+                            <button onclick="location.href ='test7.html'" class="Opcion-Lista"> De 7 a 8 años </button>
+                            <br />
+                            <br />
+                            <button onclick="location.href ='test8.html'" class="Opcion-Lista"> De 8 a 9 años </button>
+                            <br />
+                            <br />
+                            <button onclick="location.href ='test9.html'" class="Opcion-Lista"> De 9 a 10 años </button>
+                            <br />
+                            <br />
+                            <button onclick="location.href ='test10.html'" class="Opcion-Lista"> De 10 a 11 años </button>
+                            <br />
+                            <br />
+                            <button onclick="location.href ='test11.html'" class="Opcion-Lista"> De 11 a 12 años </button>
+                            <br />
+                            <br />
+
+                            </div>
+                        </div>
                     </div>
-                    Test
+                            <!--Fin de primaria-->
+                        </div>
+                    </div>
                 </div>
-                <div class="card">
-                    <h2> ¡Gracias por usar Temakoa! Por favor siga los siguientes pasos </h2>
-                    <p> 1.- Seleccione el rango de edad del sujeto a evaluar </p>
-                    <p> 2.- Conteste de manera sincera el cuestionario. </p>
 
-                    <p> ADVERTENCIA: Este test solamente arroja una estimación sobre la gravedad del problema. Por ningpún motivo debe tomar esto como un diagnóstico definitivo, esto está solamente con el fin de orientarle a usted para acudir a la ayuda que requiera. </p>
 
-                    <h2>  Escala de madurez social de Vineland </h2>
-                  
 
-                        <!--Preescolar-->
-                        <button onclick="location.href ='test3.html'" class="Opcion-Lista"> De 3 a 4 años </button>
-                        <br />
-                        <br />
-                        <button onclick="location.href ='test4.html'" class="Opcion-Lista"> De 4 a 5 años </button>
-                        <br />
-                        <br />
-                        <button onclick="location.href ='test5.html'" class="Opcion-Lista"> De 5 a 6 años </button>
-                        <br />
-
-                        <!--Fin de preescolar-->
-                        
-                        <!--Primaria-->
-
-                        <br />
-                        <button onclick="location.href ='test6.html'" class="Opcion-Lista"> De 6 a 7 años </button>
-                        <br />
-                        <br />
-                        <button onclick="location.href ='test7.html'" class="Opcion-Lista"> De 7 a 8 años </button>
-                        <br />
-                        <br />
-                        <button onclick="location.href ='test8.html'" class="Opcion-Lista"> De 8 a 9 años </button>
-                        <br />
-                        <br />
-                        <button onclick="location.href ='test9.html'" class="Opcion-Lista"> De 9 a 10 años </button>
-                        <br />
-                        <br />
-                        <button onclick="location.href ='test10.html'" class="Opcion-Lista"> De 10 a 11 años </button>
-                        <br />
-                        <br />
-                        <button onclick="location.href ='test11.html'" class="Opcion-Lista"> De 11 a 12 años </button>
-                        <br />
-                        <br />
-                    
-                        <!--Fin de primaria-->              
-                </div>
-        </div>
-    </div>
-
-    <div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-
-    <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
-    <script type="text/javascript" src="js/my-app.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
+                <script type="text/javascript" src="cordova.js"></script>
+                <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+                <script type="text/javascript" src="js/my-app.js"></script>
+                <script type="text/javascript" src="js/index.js"></script>
 
 </body>
 
